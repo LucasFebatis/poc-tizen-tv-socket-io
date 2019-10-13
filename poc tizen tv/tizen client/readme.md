@@ -18,9 +18,21 @@
 
 Sample: `tizen create web-project -n client -t BasicEmptyProject -p tv-samsung-5.0`
 
-### Create a ReactJS project
+### Create a Gatsby project
 
-### Build prod ReactJS
+`gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world`
+
+### Develop with Gatsby
+
+`gatsby develop`
+
+Server listen on: localhost:8000
+
+### Build prod Gatsby
+
+`gatsby build`
+
+output: ./public
 
 ### Packaging a Tizen Application
 

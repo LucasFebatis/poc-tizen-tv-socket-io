@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-poc tizen tv/tizen client/client/signature1.xml
-poc tizen tv/tizen client/client/client.wgt
-poc tizen tv/tizen client/client/author-signature.xml
-poc tizen tv/tizen client/client/.manifest.tmp
+signature1.xml
+*.wgt
+author-signature.xml
+.manifest.tmp

@@ -32,6 +32,7 @@
         }
 
         socket.on('previousMessages', messages => {
+            $('.messages').empty()
             for (message of messages) {
                 renderMessage(message)
             }

@@ -1,3 +1,4 @@
 import React from "react"
+import App from './App';
 
-export default () => <div>Hello world! <a style={{backgroundColor: '#ff1'}}>finally hello world</a> </div>
+export default () => <App />

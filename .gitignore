@@ -4,3 +4,4 @@ signature1.xml
 *.wgt
 author-signature.xml
 .manifest.tmp
+dist

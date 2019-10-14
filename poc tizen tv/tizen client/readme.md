@@ -22,21 +22,21 @@
 
 Sample: `tizen create web-project -n client -t BasicEmptyProject -p tv-samsung-5.0`
 
-### Create a Gatsby project
+### Create a web project
 
-`gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world`
+https://createapp.dev/webpack
 
-### Develop with Gatsby
+### Develop with Webpack
 
-`gatsby develop`
+`webpack-dev-server --hot --mode development`
 
-Server listen on: localhost:8000
+Server listen on: localhost:808x
 
-### Build prod Gatsby
+### Build prod Webpack
 
-`gatsby build`
+`npm run build-prod`
 
-output: ./public
+output: ./dist
 
 ### Packaging a Tizen Application
 

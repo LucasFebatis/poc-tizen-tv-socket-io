@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./app.css";
 import socketIOClient from "socket.io-client";
 
 var socket
@@ -10,7 +10,7 @@ class App extends Component {
     constructor() {    
         super();
         this.state = {
-          endpoint: 'http://localhost:3000/',
+          endpoint: 'http://bec2ef79.ngrok.io',
           messages_data: []
         };
 
@@ -26,7 +26,8 @@ class App extends Component {
     render() {
       return (
         <div className="App">
-          {this.getMessagesData()}
+            Olá FCamara
+            {this.getMessagesData()}
         </div>
       );
     }

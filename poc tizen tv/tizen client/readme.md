@@ -12,6 +12,10 @@
 
 `rootstrap`: Show rootstrap list tizen list
 
+### List Devices and Emulators
+
+`sdb devices`
+
 ### Create a tizen project
 
 `tizen create <sub-command> [options]`

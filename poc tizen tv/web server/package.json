@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "npm run 'serve dev'",
+    "start": "npm run 'serve dev'",
     "serve dev": "ts-node-dev --respawn --transpileOnly ./app/app.ts",
     "serve prod": "tsc && node ./build/app.js",
     "tsc": "tsc",

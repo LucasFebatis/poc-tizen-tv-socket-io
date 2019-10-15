@@ -1,26 +1,23 @@
-import React, { Component } from "react";
+import React from "react";
 import "./app.css";
 import socketIOClient from "socket.io-client";
 
 var socket
 var state_current
 
-class App extends Component {
-    
-    constructor() {    
-        super();
-        this.state = {
-          endpoint: 'http://2c2ee60c.ngrok.io',
-          messages_data: []
-        };
+class App extends React.Component {
 
-        socket = socketIOClient(this.state.endpoint);
-    }
+    endpoint = 'http://0664b540.ngrok.io';
+    socket = null;
+
+    state = {
+        messagesData: []
+    };
 
     componentDidMount() {
-        state_current = this;
-        socket.on("previousMessages", this.loadPreviousMessages)
-        socket.on("receivedMessege", this.loadReceivedMessege)
+        socket = socketIOClient(this.endpoint);
+        socket.on("previousMessages", this.loadPreviousMessages.bind(this))
+        socket.on("receivedMessege", this.loadReceivedMessege.bind(this))
     }
 
     render() {
@@ -36,7 +33,7 @@ class App extends Component {
         return (
             <table>
                 <tbody>
-                {this.state.messages_data.map(message => {
+                {this.state.messagesData.map(message => {
                     return (
                         <tr key={message.message}>
                             <td>
@@ -51,18 +48,18 @@ class App extends Component {
       }
 
     renderMessage(message) {
-        state_current.state.messages_data.push(message)
-        this.setState({ messages_data: state_current.state.messages_data });
+        console.log('mes', message)
+        this.setState( prev => ({ messagesData: [...prev.messagesData, message] }));
     }
 
     loadPreviousMessages(messages) {
         for (let message of messages) {
-            state_current.renderMessage(message)
+            this.renderMessage(message);
         }
     }
 
     loadReceivedMessege(message) {
-        state_current.renderMessage(message)
+        this.renderMessage(message)
     }
 
   }

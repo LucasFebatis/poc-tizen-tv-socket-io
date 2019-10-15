@@ -10,7 +10,7 @@ class App extends Component {
     constructor() {    
         super();
         this.state = {
-          endpoint: 'http://bec2ef79.ngrok.io',
+          endpoint: 'http://2c2ee60c.ngrok.io',
           messages_data: []
         };
 
@@ -26,7 +26,7 @@ class App extends Component {
     render() {
       return (
         <div className="App">
-            Olá FCamara
+            <h2>Olá FCamara</h2>
             {this.getMessagesData()}
         </div>
       );
@@ -40,7 +40,7 @@ class App extends Component {
                     return (
                         <tr key={message.message}>
                             <td>
-                                <strong> {message.author} </strong>: {message.message}
+                                <strong> {message.author}</strong>: {message.message}
                             </td>
                         </tr>
                     );

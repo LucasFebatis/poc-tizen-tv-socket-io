@@ -5,4 +5,26 @@ html {
 body {
     min-height: 100%;
     background-color: #f5f5f5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin: 0;
+}
+h2{
+    text-align: center;
+    background-color: indianred;
+    color: white;
+}
+
+table{
+    margin: 20vh auto;
+    background-color: indianred;
+    color: white;
+    padding: 5% 0;
+    box-shadow: lightgrey 10px 10px;
+    width: 60%;
+}
+tr {
+    display: block;
+    margin: 5%;
+    text-align: center;
 }

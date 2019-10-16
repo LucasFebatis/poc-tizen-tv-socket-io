@@ -7,7 +7,7 @@ var state_current
 
 class App extends React.Component {
 
-    endpoint = 'http://0664b540.ngrok.io';
+    endpoint = 'https://febatis-socket-io-chat-server.herokuapp.com/';
     socket = null;
 
     state = {

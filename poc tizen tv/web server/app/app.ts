@@ -4,6 +4,7 @@ import socketIO from 'socket.io'
 import path from 'path'
 import ejs from 'ejs'
 
+// Port - - - - 
 var port = process.env.PORT || 3000;
 
 class App {
@@ -21,9 +22,9 @@ class App {
         app.engine('html', () => ejs.renderFile)
         app.set('view engine', 'html')
 
-        app.use('/', (req, res) => {
-            res.render('index.html')
-        })
+        // app.use('/', (req, res) => {
+        //     res.render('index.html')
+        // })
 
         io.on('connection', socket => {
             console.log(`Socket conectado: ${socket.id}`)

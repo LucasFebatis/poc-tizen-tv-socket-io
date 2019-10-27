@@ -2,7 +2,7 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/Template01" version="0.2.1" viewmodes="maximized">
 	<tizen:application id="Z8xvpsNuYT.client" package="Z8xvpsNuYT" required_version="2.3"/>
 	<name>client</name>
-	<icon src="icon.png"/>
+	<icon src="download.jpg"/>
 	<tizen:privilege name="http://tizen.org/privilege/application.launch"/>
 	<content src="app/dist/index.html"/>
 	<feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
